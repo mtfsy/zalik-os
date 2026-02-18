@@ -1,1 +1,2 @@
 https://egos.fun/book/overview.html
+egos in wsl
