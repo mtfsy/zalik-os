@@ -1,2 +1,2 @@
 https://egos.fun/book/overview.html
-egos in wsl
+egos in wsl git checkout hello
