@@ -1,2 +1,3 @@
 https://egos.fun/book/overview.html
-egos in wsl git checkout hello
+egos in wsl git checkout hello 
+- dynamic mmeory alloc
