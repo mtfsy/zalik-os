@@ -2,3 +2,5 @@ https://egos.fun/book/overview.html
 egos in wsl git checkout hello 
 - dynamic mmeory alloc done 
 2 . done3 done
+3 dione
+4 done
