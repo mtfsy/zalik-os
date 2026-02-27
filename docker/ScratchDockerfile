@@ -1,0 +1,27 @@
+FROM golang:1.26.0-alpine3.23 AS BUILDER
+
+WORKDIR /app
+
+#RUN cat <<EOF > hello.go
+#package main
+
+#import "fmt"
+
+#func main() {
+#    // This prints a simple string to the console
+#    fmt.Println("Hello, Gopher!")
+#}
+#EOF
+
+RUN printf 'package main\n\nimport "fmt"\n\nfunc main() {\n\tfmt.Println("Hello, Gopher!")\n}\n' > hello.go
+
+RUN CGO_ENABLED=0 GOOS=linux go build -ldflags="-s -w" -o hello hello.go
+
+FROM scratch
+
+COPY --from=BUILDER /app/hello /hello
+
+ENTRYPOINT ["/hello"]
+
+
+
