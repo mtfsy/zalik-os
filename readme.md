@@ -7,3 +7,5 @@ Run via QEMU
 ```console
 cd zalik-os
 make qemu
+
+To do
