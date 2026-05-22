@@ -9,5 +9,3 @@ Run via QEMU
 cd zalik-os
 make qemu
 ```
-To do
-- add bash
